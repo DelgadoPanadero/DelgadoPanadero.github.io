@@ -425,6 +425,9 @@ ul#nav li.current a { color: #F06000; }
 .portfolio-item .item-wrap {
    overflow: hidden;
    position: relative;
+   min-width: 150px;
+   min-height: 150px;
+   float: left;
 
    -webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
