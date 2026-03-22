@@ -117,7 +117,7 @@
 
           <h1 class="hero__headline" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
             Hago <span class="hero__headline-accent">soluciones con IA</span>
-            y te ayudo a que <span class="hero__headline-accent">tú también</span> puedas
+            y te ayudo a que puedas <span class="hero__headline-accent">tú también.</span>
           </h1>
 
           <p class="hero__subheadline" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
@@ -126,8 +126,8 @@
           </p>
 
           <div class="hero__actions" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">
-            <a href="#services" class="btn btn--primary">Ver mi trabajo</a>
-            <a href="#contact" class="btn btn--ghost">Iniciar una conversación</a>
+            <a href="#services" class="btn btn--primary">¿Eres una empresa?</a>
+            <a href="#teaching" class="btn btn--ghost">¿Quieres aprender?</a>
           </div>
 
           <div class="hero__social" data-aos="fade-up" data-aos-duration="700" data-aos-delay="400">
@@ -190,6 +190,7 @@
           <span>Educación en IA</span><span aria-hidden="true">·</span>
         </div>
       </div>
+
     </section>
 
     <!-- ============================================================
@@ -201,55 +202,86 @@
         <div class="about__header" data-aos="fade-up">
           <p class="section-eyebrow">Sobre mí</p>
           <h2 class="section-heading" id="about-heading">
-            Un recorrido que une<br />
-            <span class="accent">la ciencia con la práctica.</span>
+            Cómo he llegado a unir <span class="accent">la ciencia con la práctica.</span>
           </h2>
         </div>
 
-        <div class="timeline" data-aos="fade-up" data-aos-delay="100">
+        <div class="git-graph" data-aos="fade-up" data-aos-delay="100">
 
-          <div class="timeline__item">
-            <div class="timeline__dot" aria-hidden="true"></div>
-            <div class="timeline__card">
-              <div class="timeline__badge">Hoy · Principal</div>
-              <h3 class="timeline__title">Arquitecto de Soluciones de IA</h3>
-              <p class="timeline__desc">Asesoría a empresas del Ibex35 y Pymes para adoptar la IA en sus procesos de negocio.</p>
+          <!-- ● Arquitecto — fork starts here -->
+          <div class="git-row">
+            <div class="git-lanes" aria-hidden="true">
+              <svg width="44" height="100%" viewBox="0 0 44 100" preserveAspectRatio="none">
+                <line x1="10" y1="50" x2="10" y2="100" stroke="var(--git-main)" stroke-width="2"/>
+              </svg>
+              <span class="git-dot git-dot--main"></span>
+            </div>
+            <div class="git-card">
+              <code class="git-ref">Paradigma Digital · Minsait · CONVOTIS</code>
+              <h3 class="git-title">Arquitecto de Soluciones de IA</h3>
+              <p class="git-desc">Asesoría a empresas del Ibex35 y Pymes para adoptar la IA en sus procesos de negocio.</p>
             </div>
           </div>
 
-          <div class="timeline__item timeline__item--branch">
-            <div class="timeline__dot" aria-hidden="true"></div>
-            <div class="timeline__card">
-              <div class="timeline__badge">Hoy · Paralelo</div>
-              <h3 class="timeline__title">Profesor de Data e IA</h3>
-              <p class="timeline__desc">Profesor asociado en másteres en <strong>UNIR</strong>, <strong>EAE Business School</strong> y <strong>UAM</strong>.</p>
+          <!-- ● Profesor — branch commit, merges back below -->
+          <div class="git-row">
+            <div class="git-lanes" aria-hidden="true">
+              <svg width="44" height="100%" viewBox="0 0 44 100" preserveAspectRatio="none">
+                <line x1="10" y1="0" x2="10" y2="100" stroke="var(--git-main)" stroke-width="2"/>
+                <line x1="34" y1="0" x2="34" y2="50"  stroke="var(--git-branch)" stroke-width="2"/>
+                <line x1="34" y1="50" x2="10" y2="100" stroke="var(--git-branch)" stroke-width="2"/>
+              </svg>
+              <span class="git-dot git-dot--branch"></span>
+            </div>
+            <div class="git-card">
+              <code class="git-ref git-ref--branch">Universidad Autónoma Madrid · Unir · EAE Business School </code>
+              <h3 class="git-title">Profesor de Data e IA</h3>
+              <p class="git-desc">Profesor asociado en másteres en <strong>UNIR</strong>, <strong>EAE Business School</strong> y <strong>UAM</strong>.</p>
             </div>
           </div>
 
-          <div class="timeline__item">
-            <div class="timeline__dot" aria-hidden="true"></div>
-            <div class="timeline__card">
-              <div class="timeline__badge">Investigación</div>
-              <h3 class="timeline__title">Investigador Independiente</h3>
-              <p class="timeline__desc">Nuevos algoritmos de IA, principalmente explicabilidad y métodos de ensemble.</p>
+          <!-- ● Investigador -->
+          <div class="git-row">
+            <div class="git-lanes" aria-hidden="true">
+              <svg width="44" height="100%" viewBox="0 0 44 100" preserveAspectRatio="none">
+                <line x1="10" y1="0" x2="10" y2="100" stroke="var(--git-main)" stroke-width="2"/>
+              </svg>
+              <span class="git-dot git-dot--main"></span>
+            </div>
+            <div class="git-card">
+              <code class="git-ref">IA Explicable · Ensemble Learning</code>
+              <h3 class="git-title">Investigador Independiente</h3>
+              <p class="git-desc">Nuevos algoritmos de IA, principalmente explicabilidad y métodos de ensemble.</p>
             </div>
           </div>
 
-          <div class="timeline__item">
-            <div class="timeline__dot" aria-hidden="true"></div>
-            <div class="timeline__card">
-              <div class="timeline__badge">Industria</div>
-              <h3 class="timeline__title">Ingeniero de IA</h3>
-              <p class="timeline__desc">Desarrollo de aplicaciones de datos e IA resilientes siguiendo buenas prácticas de programación y despliegue.</p>
+          <!-- ● Ingeniero -->
+          <div class="git-row">
+            <div class="git-lanes" aria-hidden="true">
+              <svg width="44" height="100%" viewBox="0 0 44 100" preserveAspectRatio="none">
+                <line x1="10" y1="0" x2="10" y2="100" stroke="var(--git-main)" stroke-width="2"/>
+              </svg>
+              <span class="git-dot git-dot--main"></span>
+            </div>
+            <div class="git-card">
+              <code class="git-ref">Sngular · NTT · Paradigma Digital</code>
+              <h3 class="git-title">Ingeniero de IA</h3>
+              <p class="git-desc">Desarrollo de aplicaciones de datos e IA resilientes siguiendo buenas prácticas de programación y despliegue.</p>
             </div>
           </div>
 
-          <div class="timeline__item">
-            <div class="timeline__dot" aria-hidden="true"></div>
-            <div class="timeline__card">
-              <div class="timeline__badge">Origen</div>
-              <h3 class="timeline__title">Físico</h3>
-              <p class="timeline__desc">El hábito de ir a los primeros principios antes de buscar soluciones.</p>
+          <!-- ● Físico — root commit -->
+          <div class="git-row git-row--last">
+            <div class="git-lanes" aria-hidden="true">
+              <svg width="44" height="100%" viewBox="0 0 44 100" preserveAspectRatio="none">
+                <line x1="10" y1="0" x2="10" y2="50" stroke="var(--git-main)" stroke-width="2"/>
+              </svg>
+              <span class="git-dot git-dot--main git-dot--root"></span>
+            </div>
+            <div class="git-card">
+              <code class="git-ref">init</code>
+              <h3 class="git-title">Físico</h3>
+              <p class="git-desc">El hábito de ir a los primeros principios antes de buscar soluciones.</p>
             </div>
           </div>
 
@@ -276,8 +308,7 @@
         <div class="services__header" data-aos="fade-up">
           <p class="section-eyebrow">Consultoría</p>
           <h2 class="section-heading" id="services-heading">
-            Cómo puedo ayudar<br />
-            <span class="accent">a tu empresa.</span>
+            Cómo puedo ayudar <span class="accent">a tu empresa.</span>
           </h2>
         </div>
 
@@ -355,12 +386,10 @@
         <div class="teaching__header" data-aos="fade-up">
           <p class="section-eyebrow">Formación</p>
           <h2 class="section-heading" id="teaching-heading">
-            Cómo puedo<br />
-            <span class="accent">ayudarte a ti.</span>
+            Cómo puedo <span class="accent">ayudarte a ti.</span>
           </h2>
           <p class="section-subheading">
-            ¿Alguna vez has sentido que la IA era demasiado difícil para ti?<br />
-            No es cierto — te lo puedo demostrar.
+            ¿Alguna vez has sentido que la IA era demasiado difícil para ti? No es cierto, te lo puedo demostrar.
           </p>
         </div>
 
@@ -427,11 +456,10 @@
         <div class="contact__header" data-aos="fade-up">
           <p class="section-eyebrow">Contacto</p>
           <h2 class="section-heading" id="contact-heading">
-            Construyamos algo<br />
-            <span class="accent">que realmente funcione.</span>
+            ¿Por qué no me escribes y <span class="accent">hablamos?</span>
           </h2>
           <p class="section-subheading">
-            Asesoría, colaboración o simplemente una conversación sobre IA — estoy disponible.
+            Asesoría, colaboración o simplemente una conversación sobre IA.
           </p>
         </div>
 
@@ -481,8 +509,7 @@
             </p>
             <div class="contact__card-divider" aria-hidden="true"></div>
             <p class="contact__card-quote">
-              «El mejor proyecto de IA no es el más sofisticado técnicamente —
-              es el que se despliega y crea valor real.»
+              «Esto va de resolver problemas, la IA es lo secundario. Lo más importante es enteder el problema»
             </p>
             <p class="contact__card-attribution">— Ángel Delgado Panadero</p>
           </div>
@@ -515,11 +542,6 @@
       </div>
     </div>
   </footer>
-
-  <!-- Back to top button -->
-  <button class="back-to-top" id="backToTop" aria-label="Volver al inicio" title="Volver al inicio">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
-  </button>
 
   <!-- Floating chat bubble -->
   <a href="#contact" class="chat-bubble" aria-label="Ir a contacto">
