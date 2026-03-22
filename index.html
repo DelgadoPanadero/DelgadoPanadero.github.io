@@ -1,401 +1,535 @@
 <!DOCTYPE html>
-<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<html lang="es">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-   <!--- Basic Page Needs
-   ================================================== -->
-   <meta charset="utf-8">
-	<title>DelgadoPanadero</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
+  <!-- SEO Meta Tags -->
+  <title>Ángel Delgado Panadero | Consultor de IA y Datos · Ingeniero · Investigador · Docente</title>
+  <meta name="description" content="Ángel Delgado Panadero (DelgadoPanadero) es un consultor e ingeniero de IA y Datos basado en Madrid. Ayudo a organizaciones a transformar su estrategia con sistemas inteligentes — combinando investigación de vanguardia, ingeniería empresarial y asesoría ejecutiva." />
+  <meta name="keywords" content="consultor IA, consultor datos, consultor machine learning, asesor IA, estrategia de datos, ingeniero IA, DelgadoPanadero, Angel Delgado Panadero, PLN, NLP, LLM, GenAI, arquitectura de datos, consultoría IA España" />
+  <meta name="author" content="Ángel Delgado Panadero" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://delgadopanadero.github.io/" />
 
-   <!-- Mobile Specific Metas
-   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://delgadopanadero.github.io/" />
+  <meta property="og:title" content="Ángel Delgado Panadero | Consultor de IA y Datos · Investigador · Docente" />
+  <meta property="og:description" content="Consultor de IA y Datos orientado al negocio. Ayudo a las organizaciones a construir estrategias de IA reales y escalables — no solo pruebas de concepto." />
+  <meta property="og:image" content="https://delgadopanadero.github.io/images/IMG20250506194248.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@panaderodelgado" />
+  <meta name="twitter:title" content="Ángel Delgado Panadero | Consultor de IA y Datos" />
+  <meta name="twitter:description" content="Consultor e ingeniero de IA y Datos, investigador y docente en Madrid." />
+  <meta name="twitter:image" content="https://delgadopanadero.github.io/images/IMG20250506194248.jpg" />
 
-	<!-- CSS
-    ================================================== -->
-   <link rel="stylesheet" href="css/default.css">
-   <link rel="stylesheet" href="css/layout.css">
-   <link rel="stylesheet" href="css/media-queries.css">
-   <link rel="stylesheet" href="css/magnific-popup.css">
+  <!-- Schema.org Person Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ángel Delgado Panadero",
+    "alternateName": "DelgadoPanadero",
+    "url": "https://delgadopanadero.github.io/",
+    "image": "https://delgadopanadero.github.io/images/IMG20250506194248.jpg",
+    "jobTitle": "AI & Data Consultant · Engineer · Researcher · Teacher",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Universidad Autónoma de Madrid"
+    },
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Universidad de Salamanca"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/delgado-panadero/",
+      "https://github.com/DelgadoPanadero",
+      "https://twitter.com/panaderodelgado",
+      "https://scholar.google.com/citations?user=PLACEHOLDER_SCHOLAR_ID"
+    ],
+    "knowsAbout": ["Artificial Intelligence", "Machine Learning", "Data Engineering", "Natural Language Processing", "Data Strategy", "AI Consulting"]
+  }
+  </script>
 
-   <!-- Script
-   ================================================== -->
-	<script src="js/modernizr.js"></script>
+  <!-- Favicon: bread emoji 🥖 -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥖</text></svg>" />
 
-   <!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="favicon.png" >
+  <!-- Google Fonts: Inter + Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
+  <!-- AOS - Animate On Scroll -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
-
 <body>
 
-   <!-- Header
-   ================================================== -->
-   <header id="home">
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Navegación principal">
+    <div class="nav__container">
+      <a href="#hero" class="nav__logo" aria-label="DelgadoPanadero — ir al inicio">
+        <span class="nav__logo-name">DelgadoPanadero</span>
+        <span class="nav__logo-dot" aria-hidden="true"></span>
+      </a>
 
-      <nav id="nav-wrap">
-         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-         <ul id="nav" class="nav">
-            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-            <li><a class="smoothscroll" href="#about">About</a></li>
-            <li><a class="smoothscroll" href="#resume">Resume</a></li>
-            <li><a class="smoothscroll" href="#portfolio">Works</a></li>
-            <li><a class="smoothscroll" href="#contact">Contact</a></li>
-         </ul> <!-- end #nav -->
-      </nav> <!-- end #nav-wrap -->
+      <div class="nav__actions">
+        <button class="nav__theme-toggle" id="themeToggle" aria-label="Cambiar modo claro/oscuro" title="Cambiar tema">
+          <svg class="theme-icon theme-icon--sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="theme-icon theme-icon--moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
 
-      <div class="row banner">
-         <div class="banner-text">
-            <h1 class="responsive-headline">I am Ángel</h1>
-                <h3><span>
-                AI Engineer and Physicist pretending to be a web developer with this page. 
-                Let's <a class="smoothscroll" href="#about">start scrolling</a> and learn more
-                <a class="smoothscroll" href="#about">about me</a>.
-                </span></h3>
-                <hr />
-                <ul class="social">
-                   <li><a href="https://twitter.com/thinbaker" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                   <li><a href="https://github.com/delgadopanadero" target="_blank"><i class="fa fa-github"></i></a></li>
-                   <li><a href="https://www.linkedin.com/in/delgado-panadero/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                </ul>
-             </div>
+        <button class="nav__toggle" id="navToggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="navMenu">
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+        </button>
+      </div>
+
+      <ul class="nav__menu" id="navMenu" role="list">
+        <li><a href="#about" class="nav__link">Sobre mí</a></li>
+        <li><a href="#services" class="nav__link">Consultoría</a></li>
+        <li><a href="#teaching" class="nav__link">Formación</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ============================================================
+         HERO SECTION
+    ============================================================ -->
+    <section class="hero" id="hero" aria-label="Presentación">
+      <div class="hero__bg-grid" aria-hidden="true"></div>
+      <div class="hero__glow" aria-hidden="true"></div>
+
+      <div class="hero__container">
+        <div class="hero__content">
+          <p class="hero__eyebrow" data-aos="fade-up" data-aos-duration="600">
+            <span class="hero__eyebrow-dot" aria-hidden="true"></span>
+            Consultor de IA y Datos · Ingeniero · Investigador · Docente
+          </p>
+
+          <h1 class="hero__headline" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+            Hago <span class="hero__headline-accent">soluciones con IA</span>
+            y te ayudo a que <span class="hero__headline-accent">tú también</span> puedas
+          </h1>
+
+          <p class="hero__subheadline" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
+            Me llamo <strong>Ángel Delgado</strong>, ingeniero, investigador y docente de IA.
+            Llevo más de 10 años ayudando a empresas.
+          </p>
+
+          <div class="hero__actions" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">
+            <a href="#services" class="btn btn--primary">Ver mi trabajo</a>
+            <a href="#contact" class="btn btn--ghost">Iniciar una conversación</a>
           </div>
-      <p class="scrolldown">
-         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
-      </p>
 
-   </header> <!-- Header End -->
+          <div class="hero__social" data-aos="fade-up" data-aos-duration="700" data-aos-delay="400">
+            <a href="https://www.linkedin.com/in/delgado-panadero/" target="_blank" rel="noopener noreferrer" class="hero__social-link" aria-label="Perfil de LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com/DelgadoPanadero" target="_blank" rel="noopener noreferrer" class="hero__social-link" aria-label="Perfil de GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              GitHub
+            </a>
+            <!-- TODO: reemplaza # con tu URL de Google Scholar -->
+            <a href="#" target="_blank" rel="noopener noreferrer" class="hero__social-link" aria-label="Perfil de Google Scholar">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3L1 9l4 2.18V17c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-5.82L21 9 12 3zm6 14H6v-4.91l6 3.27 6-3.27V17zm0-7.27L12 13 6 9.73V8.09L12 5l6 3.09v1.64z"/></svg>
+              Scholar
+            </a>
+            <a href="https://twitter.com/panaderodelgado" target="_blank" rel="noopener noreferrer" class="hero__social-link" aria-label="Perfil de Twitter/X">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              X
+            </a>
+          </div>
+        </div>
 
+        <div class="hero__visual" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+          <div class="hero__photo-wrapper">
+            <img
+              src="images/IMG20250506194248.jpg"
+              alt="Ángel Delgado Panadero — Consultor de IA y Datos"
+              class="hero__photo"
+              loading="eager"
+              width="480"
+              height="560"
+            />
+            <div class="hero__photo-badge" aria-hidden="true">
+              <span class="hero__photo-badge-icon">⚡</span>
+              <span>IA aplicada a tu negocio</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-   <!-- About Section
-   ================================================== -->
-   <section id="about">
-      <div class="row">
-         <div class="six columns">
-            <img class="profile-pic"  src="images/profilepic.jpg" alt="" />
-         </div>
+      <!-- Scrolling ticker -->
+      <div class="hero__ticker" aria-hidden="true">
+        <div class="hero__ticker-track">
+          <span>Estrategia de IA</span><span aria-hidden="true">·</span>
+          <span>Arquitectura de Datos</span><span aria-hidden="true">·</span>
+          <span>Machine Learning</span><span aria-hidden="true">·</span>
+          <span>PLN y LLMs</span><span aria-hidden="true">·</span>
+          <span>MLOps</span><span aria-hidden="true">·</span>
+          <span>Explicabilidad de Modelos</span><span aria-hidden="true">·</span>
+          <span>Asesoría GenAI</span><span aria-hidden="true">·</span>
+          <span>Educación en IA</span><span aria-hidden="true">·</span>
+          <span>Estrategia de IA</span><span aria-hidden="true">·</span>
+          <span>Arquitectura de Datos</span><span aria-hidden="true">·</span>
+          <span>Machine Learning</span><span aria-hidden="true">·</span>
+          <span>PLN y LLMs</span><span aria-hidden="true">·</span>
+          <span>MLOps</span><span aria-hidden="true">·</span>
+          <span>Explicabilidad de Modelos</span><span aria-hidden="true">·</span>
+          <span>Asesoría GenAI</span><span aria-hidden="true">·</span>
+          <span>Educación en IA</span><span aria-hidden="true">·</span>
+        </div>
+      </div>
+    </section>
 
-         <div class="six columns main-col">
+    <!-- ============================================================
+         ABOUT SECTION
+    ============================================================ -->
+    <section class="about" id="about" aria-labelledby="about-heading">
+      <div class="about__container">
 
-            <h2>About Me</h2>
+        <div class="about__header" data-aos="fade-up">
+          <p class="section-eyebrow">Sobre mí</p>
+          <h2 class="section-heading" id="about-heading">
+            Un recorrido que une<br />
+            <span class="accent">la ciencia con la práctica.</span>
+          </h2>
+        </div>
 
-            <p>
-            I studied Physics because of vocation and ended up working as AI Engineer because of motivation.
-            I think that the two actitudes that define me the most is that I am always looking for knowledge
-            and to improve myself.
+        <div class="timeline" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="timeline__item">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <div class="timeline__badge">Hoy · Principal</div>
+              <h3 class="timeline__title">Arquitecto de Soluciones de IA</h3>
+              <p class="timeline__desc">Asesoría a empresas del Ibex35 y Pymes para adoptar la IA en sus procesos de negocio.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item timeline__item--branch">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <div class="timeline__badge">Hoy · Paralelo</div>
+              <h3 class="timeline__title">Profesor de Data e IA</h3>
+              <p class="timeline__desc">Profesor asociado en másteres en <strong>UNIR</strong>, <strong>EAE Business School</strong> y <strong>UAM</strong>.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <div class="timeline__badge">Investigación</div>
+              <h3 class="timeline__title">Investigador Independiente</h3>
+              <p class="timeline__desc">Nuevos algoritmos de IA, principalmente explicabilidad y métodos de ensemble.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <div class="timeline__badge">Industria</div>
+              <h3 class="timeline__title">Ingeniero de IA</h3>
+              <p class="timeline__desc">Desarrollo de aplicaciones de datos e IA resilientes siguiendo buenas prácticas de programación y despliegue.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <div class="timeline__badge">Origen</div>
+              <h3 class="timeline__title">Físico</h3>
+              <p class="timeline__desc">El hábito de ir a los primeros principios antes de buscar soluciones.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+        <div class="about__github" data-aos="fade-up" data-aos-delay="150">
+          <p>Todos mis proyectos e investigaciones están en abierto:</p>
+          <a href="https://github.com/DelgadoPanadero" target="_blank" rel="noopener noreferrer" class="about__github-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            github.com/DelgadoPanadero
+          </a>
+        </div>
+
+    </section>
+
+    <!-- ============================================================
+         SERVICES / CONSULTING SECTION
+    ============================================================ -->
+    <section class="services" id="services" aria-labelledby="services-heading">
+      <div class="services__container">
+
+        <div class="services__header" data-aos="fade-up">
+          <p class="section-eyebrow">Consultoría</p>
+          <h2 class="section-heading" id="services-heading">
+            Cómo puedo ayudar<br />
+            <span class="accent">a tu empresa.</span>
+          </h2>
+        </div>
+
+        <div class="services__grid services__grid--three">
+
+          <article class="service-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="service-card__number" aria-hidden="true">01</div>
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3 class="service-card__title">Estrategia de IA y diseño técnico</h3>
+            <p class="service-card__desc">
+              Ayudo a definir dónde la IA crea valor real en tu organización — hojas de ruta priorizadas, selección de casos de uso y arquitectura técnica alineada con el negocio.
             </p>
-
-            <div class="row">
-               <div class="columns download">
-                  <p>
-                     <a href="https://github.com/DelgadoPanadero/DelgadoPanadero.github.io/raw/main/images/cv_angel_delgado.pdf" class="button"><i class="fa fa-download"></i>Download Resume</a>
-                  </p>
-               </div>
-            </div> <!-- end row -->
-         </div> <!-- end .main-col -->
-      </div>
-   </section> <!-- About Section End-->
-
-
-   <!-- Resume Section
-   ================================================== -->
-   <section id="resume">
-      <div class="row banner">
-            <h1>- Resume -</h1>
-      </div>
-      <!-- Education
-      ----------------------------------------------- -->
-      <div class="row item">
-         <div class="row work">
-            <div class="twelve columns main-col">
-               <h3><span>Education</span></h3>
-            </div>
-         </div>
-         <div class="row work">
-            <div class="six columns main-col">
-               <h5>B.Sc. Physics</h5>
-               <p class="info">University of Salamanca<span>&bull;</span> <em class="date">2012 - 2017</em></p>
-               <p>
-               In the middle in grades, in the top in effort. I always wanted to understand the conection between
-               the Quantum Mechanics and General Relativity and that is why my final project is about the Dirac
-               Equation constrained into a plain. The most beautiful equation ever.
-               </p>
-            </div> <!-- main-col end -->
-
-            <div class="six columns main-col">
-               <h5>M.Sc. Data Science</h5>
-               <p class="info">U-TAD<span>&bull;</span> <em class="date">2016 - 2017</em></p>
-               <p>
-               I wanted to learn how could I apply all the maths and reasoning that I learned in Physics
-               in the real world. Here I learned all about the data processing, from the sources to the visualization,
-               moreover I also discovered Artificial Intelligence and all researching work in progress.
-               </p>
-            </div> <!-- main-col end -->
-         </div> <!-- row item end -->
-      </div> <!-- row work end -->
-
-      <!-- Work
-      ----------------------------------------------- -->
-      <div class="row item">
-         <div class="row work">
-            <div class="twelve columns main-col">
-               <h3><span>Experience</span></h3>
-            </div>
-         </div>
-         <div class="row work">
-            <div class="six columns main-col">
-               <h5>IA Engineer</h5>
-               <p class="info">Python<span>&bull;</span>Tensorflow</p>
-               <p>
-               Develop, train, refine and deploy AI models, for Computer Vision and Natural Lenguage Processing projects.
-               </p>
-            </div> <!-- main-col end -->
-            <div class="six columns mail-col">
-               <h5>Data Scientist</h5>
-               <p class="info">Pandas<span>&bull;</span>Sklearn</p>
-               <p>
-               Build and deploy end-to-end Data Science projects. Exploratory Analysis, Develop ETL processes, ML services
-               Flask API, Docker, Kubernetes.
-               </p>
-            </div> <!-- main-col end -->
-         </div> <!-- row item end -->
-      </div> <!-- row work end -->
-
-
-      <!-- Skills
-      ----------------------------------------------- -->
-      <div class="row item">
-         <div class="row work">
-            <div class="twelve columns main-col">
-               <h3><span>Skills</span></h3>
-            </div>
-         </div>
-         <div class="row work">
-            <div class="six columns main-col">
-               <p>
-               Apart from my experience and knowlegde I have also many important skills. But not technical skills,
-               rather I have many non-technical skills that are very important and help me a lot in my daily life.
-               </p>
-            </div>
-            <div class="six columns main-col">
-               <div class="bars">
-                  <ul class="skills">
-                     <li><span class="bar-expand wordpress"></span><em>Bass</em></li>
-                     <li><span class="bar-expand css"></span><em>Coffee</em></li>
-                     <li><span class="bar-expand html5"></span><em>Weight Lifting</em></li>
-                  </ul>
-               </div><!-- end skill-bars -->
-            </div> <!-- main-col end -->
-         </div> <!-- row work end -->
-      </div> <!-- End skills -->
-   </section> <!-- Resume Section End-->
-
-
-   <!-- Portfolio Section
-   ================================================== -->
-   <section id="portfolio">
-      <div class="row">
-         <div class="twelve columns collapsed">
-
-            <h1>- Works -</h1>
-
-            <!-- portfolio-wrapper -->
-            <div id="portfolio-wrapper" class="bgrid-halves s-bgrid-thirds cf">
-
-                <div class="columns portfolio-item">
-                    <div class="item-wrap">
-                        <a href="#modal-01" title="">
-                           <img alt="" src="images/portfolio/skratch.jpg">
-                           <div class="overlay">
-                              <div class="portfolio-item-meta">
-                                 <h5>Scratch Forest</h5><p>Machine Learning</p>
-                              </div>
-                           </div>
-                           <div class="link-icon"><i class="icon-plus"></i></div>
-                        </a>
-                    </div>
-                </div> <!-- item end -->
-
-                <div class="columns portfolio-item">
-                    <div class="item-wrap">
-                        <a href="#modal-02" title="">
-                            <img alt="" src="images/portfolio/dirac.jpg">
-                            <div class="overlay">
-                                <div class="portfolio-item-meta">
-                                    <h5>Fermions in magnetic fields</h5><p>Physics</p>
-                                </div>
-                            </div>
-                            <div class="link-icon"><i class="icon-plus"></i></div>
-                        </a>
-                    </div>
-                </div> <!-- item end -->
-            </div> <!-- portfolio-wrapper end -->
-         </div> <!-- twelve columns end -->
-
-         <div class="twelve columns collapsed">
-            <!-- portfolio-wrapper -->
-            <div id="portfolio-wrapper" class="bgrid-halves s-bgrid-thirds cf">
-
-                <div class="columns portfolio-item">
-                    <div class="item-wrap">
-                        <a href="#modal-03" title="">
-                            <img alt="" src="images/portfolio/gradientboosting.jpg">
-                            <div class="overlay">
-                               <div class="portfolio-item-meta">
-                                   <h5>Explainable Gradient Boosting</h5><p>Research</p>
-                               </div>
-                            </div>
-                            <div class="link-icon"><i class="icon-plus"></i></div>
-                        </a>
-                    </div>
-                </div> <!-- item end -->
-
-                <div class="columns portfolio-item">
-                    <div class="item-wrap">
-
-                        <a href="#modal-04" title="">
-                            <img alt="" src="images/portfolio/catastro.jpg">
-                            <div class="overlay">
-                                <div class="portfolio-item-meta">
-                                    <h5>Catastro API</h5><p>R package</p>
-                                </div>
-                            </div>
-                            <div class="link-icon"><i class="icon-plus"></i></div>
-                        </a>
-                    </div>
-                </div> <!-- item end -->
-            </div> <!-- portfolio-wrapper end -->
-         </div> <!-- twelve columns end -->
-
-
-         <!-- Modal Popup
-	      --------------------------------------------------------------- -->
-
-         <div id="modal-01" class="popup-modal mfp-hide">
-             <img class="scale-with-grid" src="images/portfolio/modals/m-skratch.jpg" alt="" />
-             <div class="description-box">
-                 <h4>Scratch Forest</h4>
-                 <p>This project consist on implementing common tree and forest algorithms in plain Python from scratch.</p>
-                 <span class="categories"><i class="fa fa-tag"></i>Machine Learning</span>
-             </div>
-             <div class="link-box">
-                 <a href="https://github.com/DelgadoPanadero/Scratch-Python-Forest" target="_blank">Details</a>
-                 <a class="popup-modal-dismiss">Close</a>
-             </div>
-         </div><!-- modal-01 End -->
-
-         <div id="modal-02" class="popup-modal mfp-hide">
-             <img class="scale-with-grid" src="images/portfolio/modals/m-dirac.jpg" alt="" />
-             <div class="description-box">
-                 <h4>Fermions in Magnetic fields</h4>
-                 <p>Analysis the movement of fermions in presence of a constant magnetic field to reach the spectre and eigenstates in the quantum relativistic problem.</p>
-                 <span class="categories"><i class="fa fa-tag"></i>Physics</span>
-             </div>
-             <div class="link-box">
-                 <a href="https://github.com/DelgadoPanadero/TFG_Fermions_in_Magnetic_Fields/blob/master/dirac_equation_plane_constrain/proyecto.pdf" target="_blank">Details</a>
-                 <a class="popup-modal-dismiss">Close</a>
-             </div>
-         </div><!-- modal-02 End -->
-
-         <div id="modal-03" class="popup-modal mfp-hide">
-             <img class="scale-with-grid" src="images/portfolio/modals/gradientboosting.jpg" alt="" />
-             <div class="description-box">
-                 <h4>Explainable Gradient Boosting</h4>
-                 <p>A research work about a reinterpretation of the Gradient Boosting model to convert it into a local explainable model..</p>
-                 <span class="categories"><i class="fa fa-tag"></i>Researching</span>
-             </div>
-             <div class="link-box">
-                 <a href="http://www.behance.net" target="_blank">Details</a>
-                 <a class="popup-modal-dismiss">Close</a>
-             </div>
-         </div><!-- modal-03 End -->
-
-         <div id="modal-04" class="popup-modal mfp-hide">
-             <img class="scale-with-grid" src="images/portfolio/modals/m-catastro.jpg" alt="" />
-             <div class="description-box">
-                 <h4>CatastRo</h4>
-                 <p>R package to query Sede electrónica del Catastro API.</p>
-                 <span class="categories"><i class="fa fa-tag"></i>R package</span>
-             </div>
-             <div class="link-box">
-                 <a href="https://github.com/rOpenSpain/CatastRo" target="_blank">Details</a>
-                 <a class="popup-modal-dismiss">Close</a>
-             </div>
-         </div><!-- modal-04 End -->
-      </div> <!-- row End -->
-   </section> <!-- Portfolio Section End-->
-
-
-   <!-- Contact Section
-   ================================================== -->
-   <section id="contact">
-      <div class="row banner">
-            <h1>- Contact -</h1>
-      </div>
-       <div class="row section-head">
-           <div class="two columns header-col">
-               <h3><span>Get In Touch.</span></h3>
-           </div>
-           <div class="six columns">
-               <p class="lead">
-               We can talk through email, but feel free to write me
-               through any of my social media (specially through twitter, I tweet very good :).
-               </p>
-           </div>
-               <div class="columns contact-details">
-                  <h2>Contact Details</h2>
-                  <p class="address">
-                      <span>Ángel Delgado Panadero</span><br>
-                      <span>Madrid Spain</span><br>
-                      <span><a href="mailto:delgadopanadero@gmail.com"">delgadopanadero@gmail.com</a></span>
-                  </p>
-               </div>
-       </div>
-
-   </section> <!-- Contact Section End-->
-
-
-   <!-- footer
-   ================================================== -->
-   <footer>
-      <div class="row">
-         <div class="twelve columns">
-            <ul class="social-links">
-               <li><a href="https://twitter.com/thinbaker" target="_blank"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="https://github.com/delgadopanadero" target="_blank"><i class="fa fa-github"></i></a></li>
-               <li><a href="https://www.linkedin.com/in/delgado-panadero/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            <ul class="service-card__tags" aria-label="Palabras clave del servicio">
+              <li>Consultor IA</li>
+              <li>Estrategia de Datos</li>
+              <li>Arquitectura de IA</li>
+              <li>LLM</li>
+              <li>GenAI</li>
             </ul>
-            <ul class="copyright">
-               <li>&copy; Copyright 2014 CeeVee</li>
-               <li>Design by <a href="http://www.styleshout.com/" title="Styleshout" target="_blank">Styleshout</a></li>   
+          </article>
+
+          <article class="service-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card__number" aria-hidden="true">02</div>
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            </div>
+            <h3 class="service-card__title">Desarrollando soluciones digitales</h3>
+            <p class="service-card__desc">
+              Diseño e implemento sistemas de datos e IA listos para producción — desde pipelines de datos hasta modelos de ML y PLN desplegados en entornos reales.
+            </p>
+            <ul class="service-card__tags" aria-label="Palabras clave del servicio">
+              <li>Ingeniero IA</li>
+              <li>Machine Learning</li>
+              <li>NLP</li>
+              <li>MLOps</li>
+              <li>Data Engineering</li>
             </ul>
+          </article>
 
-         </div>
+          <article class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card__number" aria-hidden="true">03</div>
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3 class="service-card__title">Formaciones y Asesoramiento de IA</h3>
+            <p class="service-card__desc">
+              Talleres y programas de formación en IA para equipos técnicos y directivos — construyendo capacidad interna para que la organización no dependa de un consultor externo.
+            </p>
+            <ul class="service-card__tags" aria-label="Palabras clave del servicio">
+              <li>Formación IA Empresas</li>
+              <li>Taller IA</li>
+              <li>Upskilling</li>
+              <li>IA para No Técnicos</li>
+            </ul>
+          </article>
 
-         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+        </div>
+
+        <div class="services__cta" data-aos="fade-up" data-aos-delay="100">
+          <p>¿Hablamos de cómo la IA puede marcar la diferencia en tu organización?</p>
+          <a href="#contact" class="btn btn--primary">Contactar</a>
+        </div>
 
       </div>
+    </section>
 
-   </footer> <!-- Footer End-->
+    <!-- ============================================================
+         TEACHING SECTION
+    ============================================================ -->
+    <section class="teaching" id="teaching" aria-labelledby="teaching-heading">
+      <div class="teaching__container">
 
-   <!-- Java Script
-   ================================================== -->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+        <div class="teaching__header" data-aos="fade-up">
+          <p class="section-eyebrow">Formación</p>
+          <h2 class="section-heading" id="teaching-heading">
+            Cómo puedo<br />
+            <span class="accent">ayudarte a ti.</span>
+          </h2>
+          <p class="section-subheading">
+            ¿Alguna vez has sentido que la IA era demasiado difícil para ti?<br />
+            No es cierto — te lo puedo demostrar.
+          </p>
+        </div>
 
-   <script src="js/jquery.flexslider.js"></script>
-   <script src="js/waypoints.js"></script>
-   <script src="js/jquery.fittext.js"></script>
-   <script src="js/magnific-popup.js"></script>
-   <script src="js/init.js"></script>
+        <div class="teaching__grid teaching__grid--three">
 
+          <article class="teaching-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="teaching-card__header">
+              <div class="teaching-card__badge">Workshop</div>
+            </div>
+            <h3 class="teaching-card__title">Programación con IA</h3>
+            <p class="teaching-card__desc">
+              Aprende haciendo. Talleres prácticos para usar la IA como herramienta de trabajo diario — sin necesidad de ser programador de base.
+            </p>
+            <a href="#contact" class="teaching-card__link">
+              Solicitar taller
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+
+          <article class="teaching-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="teaching-card__header">
+              <div class="teaching-card__badge">Curso</div>
+            </div>
+            <h3 class="teaching-card__title">Data / IA Engineer</h3>
+            <p class="teaching-card__desc">
+              Formaciones grupales para técnicos y no técnicos. Desde los fundamentos de datos hasta modelos en producción. Impartido en <strong>UNIR</strong>, <strong>EAE Business School</strong> y <strong>UAM</strong>.
+            </p>
+            <a href="https://github.com/DelgadoPanadero/Curso-de-IA-y-NLP" target="_blank" rel="noopener noreferrer" class="teaching-card__link">
+              Ver materiales en GitHub
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+
+          <article class="teaching-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="teaching-card__header">
+              <div class="teaching-card__badge">Divulgación</div>
+            </div>
+            <h3 class="teaching-card__title">IA para todos</h3>
+            <p class="teaching-card__desc">
+              Charlas, artículos y contenido abierto para acercar la inteligencia artificial a cualquier persona — con rigor, sin jerga innecesaria.
+            </p>
+            <a href="https://github.com/DelgadoPanadero" target="_blank" rel="noopener noreferrer" class="teaching-card__link">
+              Explorar en GitHub
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+
+        </div>
+
+        <div class="teaching__cta" data-aos="fade-up" data-aos-delay="100">
+          <p>¿Interesado en una formación personalizada para ti o tu equipo?</p>
+          <a href="#contact" class="btn btn--primary">Hablemos</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACT SECTION
+    ============================================================ -->
+    <section class="contact" id="contact" aria-labelledby="contact-heading">
+      <div class="contact__container">
+
+        <div class="contact__header" data-aos="fade-up">
+          <p class="section-eyebrow">Contacto</p>
+          <h2 class="section-heading" id="contact-heading">
+            Construyamos algo<br />
+            <span class="accent">que realmente funcione.</span>
+          </h2>
+          <p class="section-subheading">
+            Asesoría, colaboración o simplemente una conversación sobre IA — estoy disponible.
+          </p>
+        </div>
+
+        <div class="contact__body" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="contact__channels">
+            <a href="https://www.linkedin.com/in/delgado-panadero/" target="_blank" rel="noopener noreferrer" class="contact-channel">
+              <div class="contact-channel__icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </div>
+              <div class="contact-channel__text">
+                <strong>Conectar en LinkedIn</strong>
+                <span>El mejor canal para consultas profesionales</span>
+              </div>
+              <svg class="contact-channel__arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+
+            <a href="https://github.com/DelgadoPanadero" target="_blank" rel="noopener noreferrer" class="contact-channel">
+              <div class="contact-channel__icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </div>
+              <div class="contact-channel__text">
+                <strong>Explorar en GitHub</strong>
+                <span>Proyectos de código abierto e investigación</span>
+              </div>
+              <svg class="contact-channel__arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+
+            <a href="https://twitter.com/panaderodelgado" target="_blank" rel="noopener noreferrer" class="contact-channel">
+              <div class="contact-channel__icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </div>
+              <div class="contact-channel__text">
+                <strong>Seguir en X / Twitter</strong>
+                <span>Reflexiones sobre IA, datos y tecnología</span>
+              </div>
+              <svg class="contact-channel__arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <div class="contact__card">
+            <p class="contact__card-eyebrow">Ubicación</p>
+            <p class="contact__card-location">Madrid, España</p>
+            <p class="contact__card-availability">
+              <span class="contact__availability-dot" aria-hidden="true"></span>
+              Disponible para consultoría
+            </p>
+            <div class="contact__card-divider" aria-hidden="true"></div>
+            <p class="contact__card-quote">
+              «El mejor proyecto de IA no es el más sofisticado técnicamente —
+              es el que se despliega y crea valor real.»
+            </p>
+            <p class="contact__card-attribution">— Ángel Delgado Panadero</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__container">
+      <div class="footer__left">
+        <p class="footer__name">Ángel Delgado Panadero</p>
+        <p class="footer__tagline">AI &amp; Data Consultant · Researcher · Teacher · Madrid</p>
+      </div>
+      <div class="footer__right">
+        <nav aria-label="Navegación del pie de página">
+          <a href="#about" class="footer__link">Sobre mí</a>
+          <a href="#services" class="footer__link">Consultoría</a>
+          <a href="#teaching" class="footer__link">Formación</a>
+          <a href="https://www.linkedin.com/in/delgado-panadero/" target="_blank" rel="noopener noreferrer" class="footer__link">LinkedIn</a>
+          <a href="https://github.com/DelgadoPanadero" target="_blank" rel="noopener noreferrer" class="footer__link">GitHub</a>
+        </nav>
+        <p class="footer__copy">&copy; <span id="currentYear"></span> DelgadoPanadero. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="backToTop" aria-label="Volver al inicio" title="Volver al inicio">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <!-- Floating chat bubble -->
+  <a href="#contact" class="chat-bubble" aria-label="Ir a contacto">
+    <span class="chat-bubble__icon" aria-hidden="true">💬</span>
+    <span class="chat-bubble__text">¿Quieres que hablemos y te cuento?</span>
+  </a>
+
+  <!-- AOS Library -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <!-- Main Script -->
+  <script src="js/script.js"></script>
 </body>
-
 </html>
