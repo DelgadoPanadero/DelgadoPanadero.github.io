@@ -190,6 +190,10 @@ button {
   color: var(--color-accent-light);
 }
 
+.accent--teacher {
+  color: #f59e0b;
+}
+
 /* ----------------------------------------------------------------
    4. Button System
    ---------------------------------------------------------------- */
@@ -229,6 +233,18 @@ button {
   background: var(--color-accent-pale);
   border-color: var(--color-accent);
   color: var(--color-accent-light);
+}
+
+.btn--teacher {
+  border-color: #f59e0b;
+  color: #f59e0b;
+}
+
+.btn--teacher:hover,
+.btn--teacher:focus-visible {
+  background: rgba(245, 158, 11, 0.1);
+  border-color: #f59e0b;
+  color: #f59e0b;
 }
 
 .btn--outline {
@@ -1562,6 +1578,38 @@ html[data-theme="dark"] .theme-icon--moon { display: block; }
   html:not([data-theme]) .theme-icon--moon { display: none; }
 }
 
+/* Language toggle pill */
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+  padding: 0 var(--space-3);
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border);
+  background: transparent;
+  color: var(--color-text-secondary);
+  font-family: var(--font-display);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: color var(--transition-fast), border-color var(--transition-fast),
+              background var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.lang-toggle:hover,
+.lang-toggle:focus-visible {
+  color: var(--color-accent-light);
+  border-color: var(--color-accent);
+  background: var(--color-accent-pale);
+}
+
+.lang-toggle__label {
+  pointer-events: none;
+}
+
 /* About GitHub link */
 .about__github {
   max-width: 580px;
@@ -1596,8 +1644,8 @@ html[data-theme="dark"] .theme-icon--moon { display: block; }
    18. Git Graph (About Section)
    ---------------------------------------------------------------- */
 .git-graph {
-  --git-main:   var(--color-accent);
-  --git-branch: var(--color-accent-light);
+  --git-main:   #f59e0b;
+  --git-branch: #fcd34d;
   margin: 1.5rem auto;
   padding: 0 1rem;
 }
@@ -1663,13 +1711,13 @@ html[data-theme="dark"] .theme-icon--moon { display: block; }
   display: block;
   font-family: 'Courier New', monospace;
   font-size: 0.7rem;
-  color: var(--git-main);
+  color: var(--color-accent);
   margin-bottom: 0.2rem;
   opacity: 0.8;
 }
 
 .git-ref--branch {
-  color: var(--git-branch);
+  color: var(--color-accent-light);
 }
 
 .git-title {
@@ -1700,14 +1748,14 @@ html[data-theme="dark"] .theme-icon--moon { display: block; }
   gap: 0.6rem;
   background: var(--color-accent);
   color: #fff;
-  padding: 0.75rem 1.25rem;
+  padding: 0.55rem 1rem;
   border-radius: 2rem;
   text-decoration: none;
   font-family: var(--font-display);
   font-weight: 600;
   font-size: var(--text-sm);
   transition: transform 0.2s ease, background 0.2s ease;
-  max-width: 260px;
+  max-width: 320px;
 }
 
 .chat-bubble:hover {

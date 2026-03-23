@@ -67,11 +67,19 @@
     const menu   = $('#navMenu');
     if (!toggle || !menu) return;
 
+    function getNavLabel(key) {
+      if (window.translations && window.__currentLang) {
+        const t = window.translations[window.__currentLang];
+        if (t && t[key]) return t[key];
+      }
+      return key === 'nav_toggle_close' ? 'Cerrar menú de navegación' : 'Abrir menú de navegación';
+    }
+
     function openMenu() {
       menu.classList.add('is-open');
       toggle.classList.add('is-active');
       toggle.setAttribute('aria-expanded', 'true');
-      toggle.setAttribute('aria-label', 'Cerrar menú de navegación');
+      toggle.setAttribute('aria-label', getNavLabel('nav_toggle_close'));
       document.body.style.overflow = 'hidden';
     }
 
@@ -79,7 +87,7 @@
       menu.classList.remove('is-open');
       toggle.classList.remove('is-active');
       toggle.setAttribute('aria-expanded', 'false');
-      toggle.setAttribute('aria-label', 'Abrir menú de navegación');
+      toggle.setAttribute('aria-label', getNavLabel('nav_toggle_open'));
       document.body.style.overflow = '';
     }
 
@@ -275,10 +283,14 @@
 
 // Email obfuscation — assembled at runtime to avoid bot scraping
 (function () {
-  const link = document.getElementById('email-link');
-  if (!link) return;
-  const email = link.dataset.u + '\u0040' + link.dataset.d;
-  link.href = 'mailto:' + email;
+  function assembleEmail(el) {
+    if (!el) return;
+    const email = el.dataset.u + '\u0040' + el.dataset.d;
+    el.href = 'mailto:' + email;
+    return email;
+  }
+  const email = assembleEmail(document.getElementById('email-link'));
   const display = document.getElementById('email-display');
-  if (display) display.textContent = email;
+  if (display && email) display.textContent = email;
+  assembleEmail(document.getElementById('bubble-email-link'));
 })();
