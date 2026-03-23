@@ -1,5 +1,5 @@
 /* ================================================================
-   DelgadoPanadero — Personal Brand Website
+   PanaderoDelgado — Personal Brand Website
    Design System & Styles
    Inspired by: Ali Abdaal (clean educator aesthetic),
                 Naval Ravikant (minimal, high-signal),
@@ -281,6 +281,12 @@ button {
   align-items: center;
   justify-content: space-between;
   gap: var(--space-8);
+}
+
+.nav__left {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
 }
 
 .nav__logo {
@@ -590,7 +596,6 @@ button {
 }
 
 .about__header {
-  max-width: 640px;
   margin-bottom: var(--space-16);
 }
 
@@ -761,7 +766,8 @@ button {
 
 .service-card__tags {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
   gap: var(--space-2);
 }
 
@@ -1592,26 +1598,28 @@ html[data-theme="dark"] .theme-icon--moon { display: block; }
 .git-graph {
   --git-main:   var(--color-accent);
   --git-branch: var(--color-accent-light);
-  margin: 0 auto;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
 }
 
 .git-row {
   display: flex;
   align-items: stretch;
-  gap: 0.875rem;
+  gap: 2.5rem;
   margin-bottom: 0.5rem;
+  margin-left: 1rem;
 }
 
 /* SVG lane column */
 .git-lanes {
   position: relative;
-  width: 44px;
+  width: 60px;
   flex-shrink: 0;
 }
 
 .git-lanes svg {
   display: block;
-  width: 44px;
+  width: 60px;
   height: 100%;
 }
 
@@ -1713,6 +1721,10 @@ html[data-theme="dark"] .theme-icon--moon { display: block; }
   flex-shrink: 0;
 }
 
+.chat-bubble--top {
+  bottom: 7.5rem;
+}
+
 @media (max-width: 480px) {
   .chat-bubble__text { display: none; }
   .chat-bubble {
@@ -1720,6 +1732,9 @@ html[data-theme="dark"] .theme-icon--moon { display: block; }
     border-radius: 50%;
     bottom: 1.5rem;
     right: 1.5rem;
+  }
+  .chat-bubble--top {
+    bottom: 7rem;
   }
 }
 

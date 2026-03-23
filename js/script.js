@@ -1,5 +1,5 @@
 /**
- * DelgadoPanadero — Personal Brand Website
+ * PanaderoDelgado — Personal Brand Website
  * JavaScript Interactions
  *
  * Features:
@@ -271,4 +271,14 @@
     init();
   }
 
+})();
+
+// Email obfuscation — assembled at runtime to avoid bot scraping
+(function () {
+  const link = document.getElementById('email-link');
+  if (!link) return;
+  const email = link.dataset.u + '\u0040' + link.dataset.d;
+  link.href = 'mailto:' + email;
+  const display = document.getElementById('email-display');
+  if (display) display.textContent = email;
 })();
