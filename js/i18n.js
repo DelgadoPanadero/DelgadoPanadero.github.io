@@ -1,5 +1,5 @@
 /**
- * PanaderoDelgado — Bilingual Support (Spanish / English)
+ * DelgadoPanadero — Bilingual Support (Spanish / English)
  *
  * Spanish text lives in the HTML — it is the source of truth.
  * English translations are defined below and applied at runtime.
@@ -15,7 +15,7 @@
 const translations = {
   en: {
     /* ── Navigation ───────────────────────────────────────────── */
-    nav_logo_aria:        'PanaderoDelgado — go to top',
+    nav_logo_aria:        'DelgadoPanadero — go to top',
     nav_about:            'About',
     nav_services:         'Consulting',
     nav_teaching:         'Training',

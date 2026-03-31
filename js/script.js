@@ -1,5 +1,5 @@
 /**
- * PanaderoDelgado — Personal Brand Website
+ * DelgadoPanadero — Personal Brand Website
  * JavaScript Interactions
  *
  * Features:
