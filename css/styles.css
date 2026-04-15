@@ -1735,6 +1735,53 @@ html[data-theme="dark"] .theme-icon--moon { display: block; }
   margin: 0;
 }
 
+.git-artifact {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.65rem;
+  padding: 0.35rem 0.6rem;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--git-main);
+  border-radius: 4px;
+  text-decoration: none;
+  transition: border-left-color 0.2s ease, background 0.2s ease;
+}
+.git-artifact:hover {
+  background: var(--color-bg-card);
+  border-left-color: var(--color-accent);
+}
+.git-artifact__label {
+  font-family: 'Courier New', monospace;
+  font-size: 0.65rem;
+  color: var(--color-accent);
+  background: color-mix(in srgb, var(--color-accent) 12%, transparent);
+  padding: 0.1rem 0.3rem;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+.git-artifact__name {
+  font-family: 'Courier New', monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  flex-shrink: 0;
+}
+.git-artifact__desc {
+  font-size: 0.7rem;
+  color: var(--color-text-secondary);
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.git-artifact svg {
+  flex-shrink: 0;
+  color: var(--color-text-secondary);
+  opacity: 0.6;
+}
+
 /* ----------------------------------------------------------------
    18b. Floating Chat Bubble
    ---------------------------------------------------------------- */
