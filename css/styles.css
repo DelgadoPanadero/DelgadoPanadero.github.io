@@ -948,6 +948,33 @@ button {
   padding: 0 var(--space-6);
 }
 
+.teaching__carousel {
+  overflow: hidden;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  padding: var(--space-3) 0;
+  margin-top: var(--space-8);
+  margin-bottom: var(--space-16);
+}
+
+.teaching__carousel-track {
+  display: flex;
+  gap: var(--space-8);
+  width: max-content;
+  animation: ticker-scroll 20s linear infinite;
+  font-family: var(--font-display);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+.teaching__carousel-dot {
+  opacity: 0.4;
+}
+
 .teaching__header {
   margin-bottom: var(--space-16);
 }
@@ -1120,10 +1147,12 @@ button {
 
 .contact-channel__text {
   flex: 1;
+  min-width: 0;
   display: flex;
   flex-direction: column;
   gap: 2px;
 }
+
 
 .contact-channel__text strong {
   font-family: var(--font-display);
@@ -1135,6 +1164,9 @@ button {
 .contact-channel__text span {
   font-size: var(--text-xs);
   color: var(--color-text-muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .contact-channel__arrow {
@@ -1462,6 +1494,28 @@ button {
     bottom: var(--space-6);
     left: var(--space-6);
   }
+
+  /* About: github link outside container needs padding */
+  .about__github {
+    padding: 0 var(--space-6);
+  }
+
+  /* About: git-ref long text truncation */
+  .git-ref {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+  }
+
+  /* Contact: reduce padding on channel cards and info card */
+  .contact-channel {
+    padding: var(--space-4);
+  }
+
+  .contact__card {
+    padding: var(--space-5);
+  }
 }
 
 /* ----------------------------------------------------------------
@@ -1701,6 +1755,8 @@ html[data-theme="dark"] .theme-icon--moon { display: block; }
 /* Commit card */
 .git-card {
   flex: 1;
+  min-width: 0;
+  overflow: hidden;
   background: var(--color-bg-card);
   border: 1px solid var(--color-border);
   border-radius: 8px;
@@ -1776,6 +1832,55 @@ html[data-theme="dark"] .theme-icon--moon { display: block; }
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+/* ----------------------------------------------------------------
+   18a. Git Graph — Responsive
+   ---------------------------------------------------------------- */
+@media (max-width: 768px) {
+  .git-row {
+    gap: 1rem;
+    margin-left: 0;
+  }
+
+  /* Hide description on mobile — label + name is enough */
+  .git-artifact__desc {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .git-graph {
+    padding: 0 0.25rem;
+  }
+
+  .git-row {
+    gap: 0;
+    margin-bottom: 0.5rem;
+    margin-left: 0;
+  }
+
+  .git-lanes {
+    display: none;
+  }
+
+  .git-card {
+    padding: 0.6rem 0.875rem;
+    border-left: 3px solid var(--git-main);
+    border-radius: 0 8px 8px 0;
+  }
+
+  .git-card--branch {
+    border-left-color: var(--git-branch);
+  }
+
+  .git-ref {
+    font-size: 0.6rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+  }
+}
 .git-artifact svg {
   flex-shrink: 0;
   color: var(--color-text-secondary);
@@ -1819,6 +1924,10 @@ html[data-theme="dark"] .theme-icon--moon { display: block; }
 .chat-bubble--top {
   bottom: 7.5rem;
 }
+
+.chat-bubble__label {                                                                                                           
+  display: none;                                                                                                              
+}  
 
 @media (max-width: 480px) {
   .chat-bubble__text { display: none; }
