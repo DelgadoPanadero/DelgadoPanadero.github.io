@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://delgadopanadero.com/sitemap.xml
+Sitemap: https://thinbaker.com/sitemap.xml

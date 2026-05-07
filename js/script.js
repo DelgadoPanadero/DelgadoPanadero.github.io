@@ -1,5 +1,5 @@
 /**
- * DelgadoPanadero — Personal Brand Website
+ * ThinBaker — Personal Brand Website
  * JavaScript Interactions
  *
  * Features:

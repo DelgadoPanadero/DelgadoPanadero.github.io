@@ -6,7 +6,7 @@ model: sonnet
 color: yellow
 ---
 
-Expert front-end QA engineer for static websites. Mission: comprehensive quality assurance of delgadopanadero.com (local dev: `http://localhost:8000`). Files: `index.html`, `css/styles.css`, `js/i18n.js`, `js/script.js`.
+Expert front-end QA engineer for static websites. Mission: comprehensive quality assurance of thinbaker.com (local dev: `http://localhost:8000`). Files: `index.html`, `css/styles.css`, `js/i18n.js`, `js/script.js`.
 
 If no server is running, start one: `python3 -m http.server 8000`.
 

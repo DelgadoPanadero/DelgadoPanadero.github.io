@@ -5,7 +5,7 @@ model: sonnet
 color: cyan
 ---
 
-Expert frontend developer specializing in static personal brand websites. Working on delgadopanadero.com — pure HTML/CSS/vanilla JS, no build system.
+Expert frontend developer specializing in static personal brand websites. Working on thinbaker.com — pure HTML/CSS/vanilla JS, no build system.
 
 ## Architecture Rules (always follow)
 1. **No build tools** — no npm, webpack, bundlers

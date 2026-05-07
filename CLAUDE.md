@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Personal brand website for Ángel Delgado Panadero (AI & Data Consultant, Engineer, Researcher, Teacher) hosted at delgadopanadero.com via GitHub Pages.
+Personal brand website for ThinBaker (AI & Data Consultant, Engineer, Researcher, Teacher) hosted at thinbaker.com via GitHub Pages.
 
 **No build system.** This is a pure static site — plain HTML, CSS, and vanilla JS. There is no `npm install`, no bundler, no compilation step.
 

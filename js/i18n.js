@@ -1,5 +1,5 @@
 /**
- * DelgadoPanadero — Bilingual Support (Spanish / English)
+ * ThinBaker — Bilingual Support (Spanish / English)
  *
  * Spanish text lives in the HTML — it is the source of truth.
  * English translations are defined below and applied at runtime.
@@ -15,7 +15,7 @@
 const translations = {
   en: {
     /* ── Navigation ───────────────────────────────────────────── */
-    nav_logo_aria:        'DelgadoPanadero — go to top',
+    nav_logo_aria:        'ThinBaker — go to top',
     nav_about:            'About',
     nav_services:         'Consulting',
     nav_teaching:         'Training',
@@ -37,7 +37,7 @@ const translations = {
     hero_scholar_aria:    'Google Scholar profile',
     hero_twitter_aria:    'Twitter/X profile',
     hero_badge:           'Business-Driven AI',
-    hero_photo_alt:       'Ángel Delgado Panadero — AI & Data Consultant',
+    hero_photo_alt:       'ThinBaker — AI & Data Consultant',
 
     /* ── Ticker ───────────────────────────────────────────────── */
     ticker_1:  'AI Strategy',
